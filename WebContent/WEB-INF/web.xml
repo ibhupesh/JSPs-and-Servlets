@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+
+
+<servlet>
+	<servlet-name>addition</servlet-name>
+	<servlet-class>com.Servlet1.addServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>addition</servlet-name>
+	<url-pattern>/add </url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>squaring</servlet-name>
+	<servlet-class>com.Servlet1.squareServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>squaring</servlet-name>
+	<url-pattern>/sq </url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>naph</servlet-name>
+	<servlet-class>com.Servlet1.MyServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>naph</servlet-name>
+	<url-pattern>/phna </url-pattern>
+</servlet-mapping>
+
+
+<context-param>
+<param-name>name</param-name>
+<param-value>Bhupesh</param-value>
+</context-param>
+
+<context-param>
+<param-name>phone</param-name>
+<param-value>Motorolla</param-value>
+</context-param>
+
+</web-app>
