@@ -5,6 +5,11 @@
 <servlet>
 	<servlet-name>addition</servlet-name>
 	<servlet-class>com.Servlet1.addServlet</servlet-class>
+	
+	<init-param>
+	<param-name>name</param-name>
+	<param-value>Saini</param-value>
+	</init-param>
 </servlet>
 
 <servlet-mapping>
@@ -25,6 +30,12 @@
 <servlet>
 	<servlet-name>naph</servlet-name>
 	<servlet-class>com.Servlet1.MyServlet</servlet-class>
+	
+	<init-param>
+	<param-name>name</param-name>
+	<param-value>Saini</param-value>
+	</init-param>
+	
 </servlet>
 
 <servlet-mapping>

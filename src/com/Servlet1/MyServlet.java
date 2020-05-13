@@ -3,6 +3,7 @@ package com.Servlet1;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -18,10 +19,16 @@ public class MyServlet extends HttpServlet {
 		PrintWriter out= response.getWriter();
 		out.println("Hi");
 		
+		//using servlet Context
 		ServletContext ctx=getServletContext();
 		String str =ctx.getInitParameter("name");
 		out.print(str);
 		String ph= ctx.getInitParameter("phone");
-		out.print(", You are using "+ph+" Phone");
+		out.println(", You are using "+ph+" Phone");
+		
+		//using servlet config
+		ServletConfig cg = getServletConfig();
+		String st=cg.getInitParameter("name");
+		out.println("Hello !"+st);
 	}
 }

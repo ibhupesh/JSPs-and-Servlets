@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
@@ -26,9 +27,13 @@ public class addServlet extends HttpServlet
 		//For getting the output on console
 		System.out.println(i+" + "+j+" = "+k);
 		
+				
 		//For output on client machine
 		PrintWriter out = res.getWriter();
 		out.println("Result is: "+k);
+		
+		
+
 		
 		/*req.setAttribute("k",k);
 		
@@ -52,5 +57,7 @@ public class addServlet extends HttpServlet
 		Cookie cookie= new Cookie("k",k+"");
 		res.addCookie(cookie);
 		res.sendRedirect("sq");
+		
+		
 	}
 }

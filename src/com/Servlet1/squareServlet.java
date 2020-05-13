@@ -3,6 +3,7 @@ package com.Servlet1;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -33,5 +34,10 @@ public class squareServlet extends HttpServlet
 		k=k*k;
 		System.out.print(k);
 		out.println("The square of the sum = "+k);
+		
+		//using servlet config
+				ServletConfig cgr = getServletConfig();
+				String s=cgr.getInitParameter("name");
+				out.println("Hello !"+s);
 	}
 }

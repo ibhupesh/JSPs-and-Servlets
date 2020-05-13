@@ -6,3 +6,4 @@ Learning Servlets and JSPs from a youtube tutorial.
 4. Used Session for passing the values.
 5. Used Cookies for passing the values.
 6. Servlet Context 
+7. Servlet Config (Bacially servlet context for multiple servlets)
