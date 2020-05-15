@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet("/add")
+//@WebServlet("/add")  //Uncomment for using Annotation
 @SuppressWarnings("serial")
 public class addServlet extends HttpServlet 
 {
