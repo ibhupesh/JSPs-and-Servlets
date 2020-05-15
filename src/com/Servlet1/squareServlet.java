@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet("/sq")
+//@WebServlet("/sq") //uncomment for using annotations
 public class squareServlet extends HttpServlet 
 {
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException
