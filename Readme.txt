@@ -7,3 +7,4 @@ Learning Servlets and JSPs from a youtube tutorial.
 5. Used Cookies for passing the values.
 6. Servlet Context 
 7. Servlet Config (Bacially servlet context for multiple servlets)
+8. Servlet Annotation used in place of xml file.
