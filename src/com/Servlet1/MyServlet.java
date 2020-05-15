@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 public class MyServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		PrintWriter out= response.getWriter();
+		out.println("<html><body bgcolor='yellow'>");
 		out.println("Hi");
 		
 		//using servlet Context
@@ -30,5 +31,6 @@ public class MyServlet extends HttpServlet {
 		ServletConfig cg = getServletConfig();
 		String st=cg.getInitParameter("name");
 		out.println("Hello !"+st);
+		out.println("</body><html>");
 	}
 }

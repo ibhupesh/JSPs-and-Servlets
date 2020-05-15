@@ -8,3 +8,4 @@ Learning Servlets and JSPs from a youtube tutorial.
 6. Servlet Context 
 7. Servlet Config (Bacially servlet context for multiple servlets)
 8. Servlet Annotation used in place of xml file.
+9. Using jsp file to dinf product of two numbers
